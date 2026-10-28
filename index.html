@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="theme-color" content="#3b0813">
-<title>Wedding Invitation</title>
+<title>Reception Invitation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
 
@@ -413,7 +413,7 @@ footer .script{font-size:34px;display:block;margin-bottom:6px}
   <svg class="chandelier" viewBox="0 0 300 220"><use href="#sym-chandelier"/></svg>
   <div class="cover-center">
     <div style="font-size:40px;filter:drop-shadow(0 0 14px rgba(243,220,138,.7))">🕉️</div>
-    <div class="caps">Wedding Invitation</div>
+    <div class="caps">Reception Invitation</div>
     <div class="names"><span data-bind="bride"></span><small>weds</small><span data-bind="groom"></span></div>
     <button class="seal" id="openBtn" aria-label="Open invitation"><b>❦</b>OPEN</button>
     <div class="cover-hint">TAP TO DRAW THE CURTAINS</div>
@@ -485,7 +485,7 @@ footer .script{font-size:34px;display:block;margin-bottom:6px}
       <h2 class="script reveal d1" style="font-size:clamp(34px,9vw,56px);margin:6px 0 24px">Scratch to reveal</h2>
       <div class="scratch-wrap reveal d2">
         <div class="scratch-inner" id="scratchInner">
-          <div class="caps pop p1">The Wedding</div>
+          <div class="caps pop p1">The Reception</div>
           <div class="date pop p2" data-bind="dateText"></div>
           <div class="time pop p2" data-bind="timeText"></div>
           <div class="ornament pop p3" style="margin:10px auto"><span style="color:var(--red)">❦</span></div>
@@ -668,7 +668,7 @@ footer .script{font-size:34px;display:block;margin-bottom:6px}
   document.getElementById('mapsBtn').href=INVITE.mapsUrl||('https://www.google.com/maps/search/?api=1&query='+q);
   const start=new Date(INVITE.dateTime);
   if(INVITE.rsvpWhatsApp){const b=document.getElementById('rsvpBtn');b.style.display='inline-flex';
-    b.href='https://wa.me/'+INVITE.rsvpWhatsApp.replace(/\D/g,'')+'?text='+encodeURIComponent('Namaste! We would be delighted to attend the wedding of '+INVITE.bride+' & '+INVITE.groom+'. – ')}
+    b.href='https://wa.me/'+INVITE.rsvpWhatsApp.replace(/\D/g,'')+'?text='+encodeURIComponent('Namaste! We would be delighted to attend the reception of '+INVITE.bride+' & '+INVITE.groom+'. – ')}
 
   // ---- events ----
   const ev=document.getElementById('events');
